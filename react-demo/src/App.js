@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Hey from './components/Greet'
+import {About} from './components/About'
+import {Message} from './components/Message'
+import {Handler} from './components/Handling'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Hey name="Rajeev"/>
+      <About name="Rajeev" job="Developer" age="20"/>
+      <Hey name="Noopur"/>
+      <About name="Noopur" job="UI/UX" age="20"/>
+      <Hey name="Zeus">
+      <About name="Zeus" job="God" age="Unknown"/>
+      <p>This is children prop</p>
+      </Hey> */}
+      {/* <Message /> */}
+      <Handler />
     </div>
   );
 }
