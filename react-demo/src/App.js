@@ -1,10 +1,17 @@
 import './App.css';
-import Hey from './components/Greet'
-import {About} from './components/About'
-import {Message} from './components/Message'
-import {Handler} from './components/Handling'
-import {Parent} from './components/Parent'
-import {User} from './components/User'
+import { PostForm } from './components/PostForm';
+// import Hey from './components/Greet'
+// import {About} from './components/About'
+// import {Message} from './components/Message'
+// import {Handler} from './components/Handling'
+// import {Parent} from './components/Parent'
+// import {User} from './components/User'
+// import {NameList} from './components/NameList'
+// import { Stylesheet } from './components/Stylesheet'
+// import { Inline } from './components/inline';
+// import styles from './appStyles.module.css'
+// import { Form } from './components/Form';
+// import { PostList } from './components/PostList';
 
 function App() {
   return (
@@ -20,7 +27,15 @@ function App() {
       {/* <Message /> */}
       {/* <Handler /> */}
       {/* <Parent /> */}
-      <User />
+      {/* <User /> */}
+      {/* <NameList /> */}
+      {/* <Stylesheet /> */}
+      {/* <Inline /> 
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
+      {/* <Form /> */}
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
