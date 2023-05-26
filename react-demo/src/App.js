@@ -3,6 +3,8 @@ import Hey from './components/Greet'
 import {About} from './components/About'
 import {Message} from './components/Message'
 import {Handler} from './components/Handling'
+import {Parent} from './components/Parent'
+import {User} from './components/User'
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <p>This is children prop</p>
       </Hey> */}
       {/* <Message /> */}
-      <Handler />
+      {/* <Handler /> */}
+      {/* <Parent /> */}
+      <User />
     </div>
   );
 }
