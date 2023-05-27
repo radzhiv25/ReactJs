@@ -1,5 +1,5 @@
 import './App.css';
-import { PostForm } from './components/PostForm';
+// import { PostForm } from './components/PostForm';
 // import Hey from './components/Greet'
 // import {About} from './components/About'
 // import {Message} from './components/Message'
@@ -12,8 +12,20 @@ import { PostForm } from './components/PostForm';
 // import styles from './appStyles.module.css'
 // import { Form } from './components/Form';
 // import { PostList } from './components/PostList';
+import NAMES from './components/data.json';
+import {useState,useTransition} from 'react';
 
 function App() {
+  const [query,setQuery] = useState('')
+  const [inputValue, setInputValue] = useState('')
+  const [isPending,startTransition] = useTransition()
+  const changeHandler = (event) => {
+    setInputValue(event.target.value)
+    startTransition(() => setQuery(event.target.value))
+  }
+  const filteredNames = NAMES.filter(item =>{
+    return item.firstName.includes(query) || item.lastName.includes(query)
+  } )
   return (
     <div className="App">
       {/* <Hey name="Rajeev"/>
@@ -35,7 +47,14 @@ function App() {
       <h1 className={styles.success}>Success</h1> */}
       {/* <Form /> */}
       {/* <PostList /> */}
-      <PostForm />
+      {/* <PostForm /> */}
+      <input type="text" value={inputValue} onChange={changeHandler}/>
+      {isPending && <p>Updating List...</p>}
+      {
+        filteredNames.map((item) => (
+          <p key={item.id}>{item.firstName} {item.lastName}</p>
+        ))
+      }
     </div>
   );
 }
