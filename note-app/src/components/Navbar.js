@@ -6,10 +6,10 @@ export const Navbar = () => {
             <div className="">
                 <Link to="/" className='flex items-center gap-2'>
                 <img src="https://img.icons8.com/nolan/64/windows-notepad.png" alt="apple-notes" className='w-10 h-10'/>
-                     <p className='text-4xl'>Keeper</p>
+                     <p className='font-bold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Keeper</p>
                 </Link>
             </div>
-            <ul className='flex gap-5 text-gray-500'>
+            <ul className='flex gap-5 text-gray-500 font-semibold'>
                 <li>
                     <Link to="/">
                         Notes
