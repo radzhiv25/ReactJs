@@ -18,7 +18,7 @@ export const Home = () => {
   return (
     <div className='p-10'>
         <CreateNote onAdd={addNote}/>
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-4">
         {
           notes.map((note, index) => (
            <Note 

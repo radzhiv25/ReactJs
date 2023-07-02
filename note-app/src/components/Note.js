@@ -2,7 +2,7 @@ import React from "react";
 
 export const Note = (props) => {
   return (
-    <div className="mt-10 border hover:shadow-md md:w-60 w-auto p-3 rounded-md hover:scale-105">
+    <div className="h-max mt-10 border hover:shadow-md md:w-60 w-auto p-3 rounded-md hover:scale-105">
       <h1 className="pb-2 text-xl font-semibold border-b">
         {props.title}
       </h1>
