@@ -1,4 +1,5 @@
 import React from "react";
+import { BsBookmarkStarFill } from 'react-icons/bs'
 
 export const Note = (props) => {
   return (
@@ -9,9 +10,12 @@ export const Note = (props) => {
       <p className="font-medum">
         {props.noteContent}
       </p>
-      <button className="mt-5 p-1 bg-red-400 font-medium text-white text-sm rounded-sm hover:bg-red-500" onClick={() => props.onDelete(props.id)}>
-        delete
+      <div className="flex items-center justify-between">
+      <button className="mt-5 p-1 bg-red-500 font-medium text-white text-sm rounded-sm" onClick={() => props.onDelete(props.id)}>
+        Delete
       </button>
+        <BsBookmarkStarFill className="relative top-3 hover:text-yellow-400"/>
+      </div>
     </div>
   );
 };
