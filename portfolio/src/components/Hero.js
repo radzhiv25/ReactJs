@@ -1,7 +1,7 @@
 // import React from 'react'
 import Code from "../assets/Code.jpg";
-import { Experience } from "./Experience";
-import { Skills } from "./Skills";
+import { Experience } from "../pages/Experience";
+import { Skills } from "../pages/Skills";
 
 function Hero() {
   return (
